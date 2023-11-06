@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mantine/code-highlight": "^7.2.0",
     "@mantine/core": "^7.1.7",
+    "@mantine/ds": "^7.2.0",
     "@mantine/hooks": "^7.1.7",
+    "@tabler/icons": "^2.40.0",
+    "@tabler/icons-react": "^2.40.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -38,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2"
   }
 }
