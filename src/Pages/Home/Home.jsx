@@ -11,13 +11,11 @@ const Home=()=>{
 
 const dispatch=useDispatch()
 const {MainReducer}=useSelector(store=>store)
-console.log(MainReducer,'reducer')
 const navigate=useNavigate()
 
 //by default will fetch the data and will map
     const FetchData=async()=>{
         let search=MainReducer.SearchResult
-        console.log(search,'searchresult')
         let URL=search!==""?`http://localhost:3000/courseModel?q=${search}`:
         'http://localhost:3000/courseModel'
     
