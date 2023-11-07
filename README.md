@@ -1,5 +1,5 @@
 ## Getting Start
 
-#Start the server using command
+##Start the server using command
 
-##npm start
+#npm start
