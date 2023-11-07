@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Autocomplete, Group, Burger, rem, Image } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconSearch } from '@tabler/icons-react';
 import classes from './Navbar.module.css';
 import Logo from '../../utils/Images/Logo.png'
 import { useNavigate } from 'react-router-dom';
-
+import { useDispatch,useSelector } from 'react-redux';
 const links = [
 
-{ link: '/dashboard', label: 'Dashboard' },
+{ link: '/studentdashboard', label: 'Dashboard' },
 ];
 
 export function Navbar() {
+    const dispatch=useDispatch()
     const navigate=useNavigate()
 const [opened, { toggle }] = useDisclosure(false);
 
@@ -26,6 +27,8 @@ const items = links.map((link) => (
     </a>
 ));
 
+
+
 return (
     <header className={classes.header}>
     <div className={classes.inner}>
@@ -39,7 +42,7 @@ return (
         </Group>
 
         <Group>
-        <Group ml={50} gap={5} className={classes.links} visibleFrom="sm">
+        <Group ml={50} gap={5} className={classes.links} onClick={()=>navigate('/studentdashboard')} visibleFrom="sm">
             {items}
         </Group>
         <Autocomplete
@@ -48,6 +51,7 @@ return (
             leftSection={<IconSearch style={{ width: rem(16), height: rem(16) }} stroke={1.5} />}
             data={['React', 'Angular', 'Vue', 'Next.js', 'Riot.js', 'Svelte', 'Blitz.js']}
             visibleFrom="xs"
+            onChange={(e)=>dispatch({type:"search",payload:e})}
         />
         </Group>
     </div>

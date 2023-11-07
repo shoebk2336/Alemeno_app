@@ -1,18 +1,20 @@
-import React, { useEffect ,useState} from 'react'
+import React, { useEffect } from 'react'
 import { Badge, Card, Container, Flex, Title,Chip, Space, Text, Group, List, Spoiler, Stepper } from '@mantine/core';
 import { useParams } from 'react-router-dom';
 import { Navbar } from '../Components/Navbar/Navbar';
+import { useDispatch,useSelector } from 'react-redux';
 
 
 
 const Individual=()=>{
+    const dispatch=useDispatch()
+    const {MainReducer}=useSelector(store=>store)
+    // console.log(MainReducer,'redux ind')
     const {id}=useParams()
-    const [Fetched_Data,setFetched_Data]=useState([])
-    console.log(Fetched_Data,'indi data')
     const Fetch=async()=>{
         const data=await fetch(`http://localhost:3000/courseModel/${id}`)
         const response=await data.json()
-        setFetched_Data(response)
+        dispatch({type:"SinglePage",payload:response})
     }
     useEffect(()=>{
         Fetch()
@@ -26,9 +28,9 @@ const Individual=()=>{
         <Card withBorder>
         <Badge m='auto'
         size={'xl'}
-        >{Fetched_Data?.name}</Badge>
+        >{MainReducer?.SinglePage_Data?.name}</Badge>
         <Space h="md"/>
-        <Title order={4}>Instructor :{" "}{Fetched_Data?.instructor}</Title>
+        <Title order={4}>Instructor :{" "}{MainReducer?.SinglePage_Data?.instructor}</Title>
         <Space h="md"/>
 
         <Group display={{base:"block",sm:"flex"}}
@@ -36,17 +38,17 @@ const Individual=()=>{
         gap='20px'
         style={{rowGap:"20px"}}
         >
-        <Chip>Mode:{" "} {Fetched_Data?.location}</Chip>
-        <Chip>Duration:{" "} {Fetched_Data?.duration}</Chip>
-        <Chip c='red'>Enrollment:{" "}{Fetched_Data?.enrollmentStatus}</Chip>
+        <Chip>Mode:{" "} {MainReducer?.SinglePage_Data?.location}</Chip>
+        <Chip>Duration:{" "} {MainReducer?.SinglePage_Data?.duration}</Chip>
+        <Chip c='red'>Enrollment:{" "}{MainReducer?.SinglePage_Data?.enrollmentStatus}</Chip>
         </Group >
         <Space h="md"/>
-        <Text c='dimmed'>Des:{" "}{Fetched_Data?.description}</Text>
-        <Text fw='600'>Schedule:{" "}{Fetched_Data?.schedule}</Text>
+        <Text c='dimmed'>Des:{" "}{MainReducer?.SinglePage_Data?.description}</Text>
+        <Text fw='600'>Schedule:{" "}{MainReducer?.SinglePage_Data?.schedule}</Text>
         <Group m='auto'>
         <Text fw='600' size='lg'>Prerequisites</Text>
         <List>
-        {Fetched_Data?.prerequisites?.map((ele,index)=>
+        {MainReducer?.SinglePage_Data?.prerequisites?.map((ele,index)=>
             <List.Item key={index}>{ele}</List.Item>)}
         </List>
         </Group>
@@ -55,7 +57,7 @@ const Individual=()=>{
         <Space h='lg'/>
         <Spoiler m='auto' showLabel='Read more' hideLabel='Hide'>
         <Stepper orientation='vertical'>
-        {Fetched_Data?.syllabus?.map((sub,index)=>
+        {MainReducer?.SinglePage_Data?.syllabus?.map((sub,index)=>
             <Stepper.Step key={index}
             label={sub.topic} description={sub.content}
             ></Stepper.Step>

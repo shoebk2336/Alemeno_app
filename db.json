@@ -1,0 +1,379 @@
+        {
+            "courseModel": [
+            {
+                "id": 1,
+                "name": "Introduction to React Native",
+                "instructor": "John Doe",
+                "description": "Learn the basics of React Native development and build your first mobile app.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "8 weeks",
+                "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+                "location": "Online",
+                "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Introduction to React Native",
+                    "content": "Overview of React Native, setting up your development environment."
+                },
+                {
+                    "week": 2,
+                    "topic": "Building Your First App",
+                    "content": "Creating a simple mobile app using React Native components."
+                }
+                ],
+                "students": [
+                {
+                    "id": 101,
+                    "name": "Alice Johnson",
+                    "email": "alice@example.com"
+                },
+                {
+                    "id": 102,
+                    "name": "Bob Smith",
+                    "email": "bob@example.com"
+                }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Advanced JavaScript",
+                "instructor": "Jane Smith",
+                "description": "Explore advanced JavaScript concepts and techniques.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "6 weeks",
+                "schedule": "Mondays and Wednesdays, 7:00 PM - 9:00 PM",
+                "location": "Online",
+                "prerequisites": ["Intermediate JavaScript knowledge"],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Closures and Scopes",
+                    "content": "Understanding closures and lexical scope in JavaScript."
+                },
+                {
+                    "week": 2,
+                    "topic": "Promises and Async/Await",
+                    "content": "Working with asynchronous code using Promises and Async/Await."
+                }
+                ],
+                "students": [
+                {
+                    "id": 201,
+                    "name": "Ella Davis",
+                    "email": "ella@example.com"
+                },
+                {
+                    "id": 202,
+                    "name": "Charlie Brown",
+                    "email": "charlie@example.com"
+                }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Web Design Fundamentals",
+                "instructor": "Maria Garcia",
+                "description": "Learn the principles of web design and create beautiful web layouts.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "4 weeks",
+                "schedule": "Thursdays, 4:00 PM - 6:00 PM",
+                "location": "Online",
+                "prerequisites": ["Basic knowledge of HTML and CSS"],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Color Theory and Typography",
+                    "content": "Explore color palettes and typography choices in web design."
+                },
+                {
+                    "week": 2,
+                    "topic": "Layout and Grid Systems",
+                    "content": "Design web layouts using grid systems and responsive design techniques."
+                }
+                ],
+                "students": [
+                {
+                    "id": 301,
+                    "name": "Grace Adams",
+                    "email": "grace@example.com"
+                },
+                {
+                    "id": 302,
+                    "name": "David Wilson",
+                    "email": "david@example.com"
+                }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Python Programming Basics",
+                "instructor": "Sarah Lee",
+                "description": "Learn the fundamentals of Python programming and coding basics.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "6 weeks",
+                "schedule": "Tuesdays and Thursdays, 7:00 PM - 9:00 PM",
+                "location": "Online",
+                "prerequisites": [
+                "No prior programming experience required"
+                ],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Introduction to Python",
+                    "content": "Overview of Python, setting up your Python environment."
+                },
+                {
+                    "week": 2,
+                    "topic": "Variables and Data Types",
+                    "content": "Learn about variables, data types, and basic Python operations."
+                }
+                ],
+                "students": [
+                {
+                    "id": 401,
+                    "name": "Olivia White",
+                    "email": "olivia@example.com"
+                },
+                {
+                    "id": 402,
+                    "name": "Ethan Moore",
+                    "email": "ethan@example.com"
+                }]
+                
+            },
+            {
+                "id": 5,
+                "name": "Machine Learning Fundamentals",
+                "instructor": "Michael Johnson",
+                "description": "Explore the basics of machine learning and its applications.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "10 weeks",
+                "schedule": "Mondays and Wednesdays, 6:30 PM - 8:30 PM",
+                "location": "Online",
+                "prerequisites": [
+                "Intermediate knowledge of Python"
+                ],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Introduction to Machine Learning",
+                    "content": "Overview of machine learning, types of algorithms, and data preprocessing."
+                },
+                {
+                    "week": 2,
+                    "topic": "Supervised Learning",
+                    "content": "Understand supervised learning and classification algorithms."
+                }
+                ],
+                "students": [
+                {
+                    "id": 501,
+                    "name": "Sophia Anderson",
+                    "email": "sophia@example.com"
+                },
+                {
+                    "id": 502,
+                    "name": "Liam Harris",
+                    "email": "liam@example.com"
+                }]
+                
+            },
+            {
+                "id": 6,
+                "name": "Data Science for Beginners",
+                "instructor": "Emily Brown",
+                "description": "Introduction to data science concepts and data analysis.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "8 weeks",
+                "schedule": "Saturdays, 10:00 AM - 12:00 PM",
+                "location": "Online",
+                "prerequisites": [
+                "Basic knowledge of statistics"
+                ],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Introduction to Data Science",
+                    "content": "Understanding the role of data science and its applications."
+                },
+                {
+                    "week": 2,
+                    "topic": "Data Visualization",
+                    "content": "Learn data visualization techniques and tools."
+                }
+                ],
+                "students": [
+                {
+                    "id": 601,
+                    "name": "Ava Turner",
+                    "email": "ava@example.com"
+                },
+                {
+                    "id": 602,
+                    "name": "Noah Parker",
+                    "email": "noah@example.com"
+                }]
+                
+            },
+            {
+                "id": 7,
+                "name": "Mobile App Development with Flutter",
+                "instructor": "William Turner",
+                "description": "Learn to build cross-platform mobile apps with Flutter and Dart.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "10 weeks",
+                "schedule": "Wednesdays and Fridays, 5:30 PM - 7:30 PM",
+                "location": "Online",
+                "prerequisites": [
+                "Basic programming knowledge"
+                ],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Introduction to Flutter",
+                    "content": "Overview of Flutter and setting up your development environment."
+                },
+                {
+                    "week": 2,
+                    "topic": "Creating UI with Flutter",
+                    "content": "Designing user interfaces using Flutter widgets."
+                }
+                ],
+                "students": [
+                {
+                    "id": 701,
+                    "name": "Mia Lewis",
+                    "email": "mia@example.com"
+                },
+                {
+                    "id": 702,
+                    "name": "Liam Clark",
+                    "email": "liam@example.com"
+                }
+                ]
+            },
+            {
+                "id": 8,
+                "name": "Frontend Web Development Bootcamp",
+                "instructor": "Olivia Walker",
+                "description": "Intensive training in HTML, CSS, and JavaScript for web development.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "12 weeks",
+                "schedule": "Mondays, Wednesdays, and Fridays, 6:00 PM - 8:00 PM",
+                "location": "Online",
+                "prerequisites": [
+                "No prior coding experience required"
+                ],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "HTML Basics",
+                    "content": "Learn the fundamentals of HTML for web development."
+                },
+                {
+                    "week": 2,
+                    "topic": "CSS Styling",
+                    "content": "Explore CSS for styling web pages."
+                }
+                ],
+                "students": [
+                {
+                    "id": 801,
+                    "name": "Sophia Turner",
+                    "email": "sophia@example.com"
+                },
+                {
+                    "id": 802,
+                    "name": "Noah Harris",
+                    "email": "noah@example.com"
+                }
+                ]
+            },
+            {
+                "id": 9,
+                "name": "Introduction to Cybersecurity",
+                "instructor": "Daniel Moore",
+                "description": "Gain a foundational understanding of cybersecurity and its importance.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "8 weeks",
+                "schedule": "Tuesdays and Thursdays, 6:30 PM - 8:30 PM",
+                "location": "Online",
+                "prerequisites": [
+                "Basic computer literacy"
+                ],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Cybersecurity Basics",
+                    "content": "Overview of cybersecurity threats and defense mechanisms."
+                },
+                {
+                    "week": 2,
+                    "topic": "Network Security",
+                    "content": "Learn about network security and common threats."
+                }
+                ],
+                "students": [
+                {
+                    "id": 901,
+                    "name": "Aiden Johnson",
+                    "email": "aiden@example.com"
+                },
+                {
+                    "id": 902,
+                    "name": "Ava Parker",
+                    "email": "ava@example.com"
+                }
+                ]
+            },
+            {
+                "id": 10,
+                "name": "Digital Marketing Strategies",
+                "instructor": "Isabella Anderson",
+                "description": "Explore digital marketing techniques and strategies for online success.",
+                "enrollmentStatus": "Open",
+                "thumbnail": "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg?w=768",
+                "duration": "6 weeks",
+                "schedule": "Saturdays, 9:00 AM - 11:00 AM",
+                "location": "Online",
+                "prerequisites": [
+                "Basic understanding of online marketing"
+                ],
+                "syllabus": [
+                {
+                    "week": 1,
+                    "topic": "Introduction to Digital Marketing",
+                    "content": "Overview of digital marketing channels and tools."
+                },
+                {
+                    "week": 2,
+                    "topic": "Social Media Marketing",
+                    "content": "Learn to leverage social media for marketing campaigns."
+                }
+                ],
+                "students": [
+                {
+                    "id": 1001,
+                    "name": "Ella Clark",
+                    "email": "ella@example.com"
+                },
+                {
+                    "id": 1002,
+                    "name": "Charlie Turner",
+                    "email": "charlie@example.com"
+                }
+                ]
+            }
+            ]
+        }
+        
