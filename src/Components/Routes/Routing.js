@@ -1,5 +1,5 @@
 import React from 'react'
-import Dashboard from "../../Pages/Dashboard"
+import Dashboard from "../.././Pages/Dashboard/Dashboard"
 import Home from "../../Pages/Home/Home"
 import Individual from "../../Pages/Individual"
 import {Routes,Route} from 'react-router-dom'
@@ -10,7 +10,7 @@ export const Routing=()=>{
     
     const Route_arr=[
         {path:"/",component:<Home/>},
-        {path:"/dashboard",component:<Dashboard/>},
+        {path:"/studentdashboard",component:<Dashboard/>},
         {path:"/course/:id",component:<Individual/>}
     ]
 
